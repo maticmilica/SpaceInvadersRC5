@@ -1,0 +1,131 @@
+11:56:24.079 INFO  - Processing command line option -hwspec C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Export\hw\system.xml. 
+11:57:50.776 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+12:00:29.592 INFO  - System reset is completed. 
+12:00:45.974 WARN  - Terminating existing sessions on processor microblaze_0 
+12:00:57.364 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+12:01:09.860 INFO  - System reset is completed. 
+12:01:22.966 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:03:03.172 INFO  - System reset is completed. 
+12:13:07.094 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:14:24.382 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:14:47.642 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:14:50.154 INFO  - System reset is completed. 
+12:16:12.167 INFO  - System reset is completed. 
+12:17:49.416 INFO  - System reset is completed. 
+12:22:17.758 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:22:20.459 INFO  - System reset is completed. 
+12:23:33.141 WARN  - Terminating existing sessions on processor microblaze_0 
+12:24:30.504 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+12:24:41.722 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+12:25:01.800 INFO  - System reset is completed. 
+12:25:45.512 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Target is not responding (timed out).
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+12:25:59.038 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:01:03.886 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+11:03:14.756 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:03:17.143 INFO  - System reset is completed. 
+11:06:44.677 INFO  - System reset is completed. 
+11:09:32.371 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:12:44.301 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:12:45.721 INFO  - System reset is completed. 
+11:13:45.067 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+11:13:45.067 WARN  - Terminating existing sessions on processor microblaze_0 
+11:14:15.474 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+11:16:46.749 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:17:26.117 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:18:01.548 INFO  - System reset is completed. 
+11:18:35.310 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Target request failed: Target is not responding (timed out).
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.debugApplication(Unknown Source)
+	at com.xilinx.sdk.debug.core.XilinxAppLaunchConfigurationDelegate.launch(Unknown Source)
+
+11:19:01.877 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:19:22.211 INFO  - Processing command line option -hwspec C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Export\hw\system.xml. 
+11:19:23.584 ERROR - Unexpected exception while copying file C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Export\hw\system_bd.bmm: org.eclipse.core.internal.resources.ResourceException: Resource '/LPRS2_projekat-master_hw_platform/system_bd.bmm' already exists. 
+11:19:54.566 INFO  - Processing command line option -hwspec C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Export\hw\system.xml. 
+11:20:40.514 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:20:55.198 INFO  - System reset is completed. 
+11:22:05.745 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:22:08.151 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Cannot perform the Debug Command
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+11:22:31.208 ERROR - Port COM1 is already in use. 
+11:23:28.635 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+11:23:39.290 ERROR - Port COM1 is already in use. 
+11:25:39.395 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:25:42.860 ERROR - Port COM1 is already in use. 
+11:28:19.166 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+11:28:19.181 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:33:53.381 INFO  - Processing command line option -hwspec C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Export\hw\system.xml. 
+11:33:54.520 INFO  - The hardware specification for project 'LPRS2_projekat-master_hw_platform' is different from C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Export\hw\system.xml. 
+11:33:54.535 INFO  - Copied contents of C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Export\hw\system.xml into \LPRS2_projekat-master_hw_platform\system.xml. 
+11:33:54.535 INFO  - Copied contents of C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Export\hw\system.bit into \LPRS2_projekat-master_hw_platform\system.bit. 
+11:33:54.535 INFO  - Copied contents of C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Export\hw\system_bd.bmm into \LPRS2_projekat-master_hw_platform\system_bd.bmm. 
+11:33:55.128 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:33:57.016 INFO  - Updating hardware inferred compiler options for Space_invaders. 
+11:33:57.047 INFO  - Clearing existing target manager status. 
+11:33:59.247 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+11:35:08.716 WARN  - Terminating existing sessions on processor microblaze_0 
+11:35:10.184 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+11:35:18.249 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:35:19.450 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+11:35:26.330 WARN  - Terminating existing sessions on processor microblaze_0 
+11:35:39.761 WARN  - Terminating existing sessions on processor microblaze_0 
+11:35:59.979 WARN  - Terminating existing sessions on processor microblaze_0 
+11:36:46.576 WARN  - Terminating existing sessions on processor microblaze_0 
+11:36:56.888 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:37:02.599 INFO  - Processing command line option -hwspec C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Export\hw\system.xml. 
+11:37:13.505 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+11:39:22.504 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:39:30.912 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:39:44.671 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:39:46.232 INFO  - System reset is completed. 
+11:41:18.509 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:41:19.603 INFO  - System reset is completed. 
+11:41:55.243 WARN  - Terminating existing sessions on processor microblaze_0 
+11:41:56.680 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+11:42:15.589 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+11:42:29.052 INFO  - System reset is completed. 
+11:45:17.101 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to lock the JTAG cable for exclusive access
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+11:49:13.927 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:49:19.278 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:49:20.167 INFO  - System reset is completed. 
+11:57:29.480 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to lock the JTAG cable for exclusive access
+
+ 
+11:57:46.126 WARN  - Terminating existing sessions on processor microblaze_0 
+11:57:57.422 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+11:58:09.138 INFO  - System reset is completed. 
+11:59:26.227 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:31:55.365 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+12:32:31.155 INFO  - System reset is completed. 
+12:35:38.493 INFO  - System reset is completed. 
+12:38:10.220 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:38:11.422 INFO  - System reset is completed. 
+12:41:15.064 WARN  - Terminating existing sessions on processor microblaze_0 
+12:41:16.484 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+12:43:34.483 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+12:45:19.587 INFO  - FPGA configured successfully with bitstream "C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/LPRS2_projekat-master/SDK/SDK_Workspace/LPRS2_projekat-master_hw_platform/download.bit" 
+12:46:42.846 INFO  - microblaze_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:46:44.267 INFO  - System reset is completed. 
+12:50:34.664 INFO  - System reset is completed. 
+13:18:25.302 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

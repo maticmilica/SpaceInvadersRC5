@@ -1,0 +1,56 @@
+iMPACT Version: Jun  8 2013 14:46:34
+
+iMPACT log file Started on Wed Jun 08 13:04:40 2016
+
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+AutoInfer            false               
+SvfPlayDisplayComments false               
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.6/ISE_DS/ISE/xcfp/data/xcf16p.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf16p successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+INFO:iMPACT:1835 - Loading CFI file -- File ? --.cfi
+Revision information not found, proceed with device default setting.
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.6/ISE_DS/ISE/xc9500xl/data/xc9572xl.bsd...
+INFO:iMPACT:501 - '2': Added Device xc9572xl successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'3': Loading file'C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\implementation\download.bit' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.6/ISE_DS/ISE/spartan6/data/xc6slx45.bsd...
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '3': Added Device xc6slx45 successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+
+
+'3': Programming device...
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:iMPACT:579 - '3': Completed downloading bit file to device.
+INFO:iMPACT:188 - '3': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '3': Checking done pin....done.
+'3': Programmed successfully.
+Elapsed time =      3 sec.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+----------------------------------------------------------------------

@@ -1,0 +1,1041 @@
+11:20:12 **** Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+11:20:13 **** Clean-only build of configuration Debug for project Space_invaders ****
+make clean 
+rm -rf  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o  ./src/SI_draw.d ./src/SI_globals.d ./src/SI_interrupt.d ./src/SI_logic.d ./src/SI_main.d ./src/platform.d  Space_invaders.elf.size  Space_invaders.elf.elfcheck  Space_invaders.elf
+ 
+11:20:13 **** Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_draw.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_draw.d" -MT"src/SI_draw.d" -o "src/SI_draw.o" "../src/SI_draw.c"
+Finished building: ../src/SI_draw.c
+ 
+Building file: ../src/SI_globals.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_globals.d" -MT"src/SI_globals.d" -o "src/SI_globals.o" "../src/SI_globals.c"
+Finished building: ../src/SI_globals.c
+ 
+Building file: ../src/SI_interrupt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_interrupt.d" -MT"src/SI_interrupt.d" -o "src/SI_interrupt.o" "../src/SI_interrupt.c"
+../src/SI_interrupt.c: In function 'rc5_interrupt_handler':
+../src/SI_interrupt.c:64:13: warning: unknown escape sequence: '\I' [enabled by default]
+Finished building: ../src/SI_interrupt.c
+ 
+Building file: ../src/SI_logic.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_logic.d" -MT"src/SI_logic.d" -o "src/SI_logic.o" "../src/SI_logic.c"
+Finished building: ../src/SI_logic.c
+ 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21038	   1368	   4880	  27286	   6a96	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+11:20:30 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:20:40 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:20:50 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:21:57 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21050	   1368	   4886	  27304	   6aa8	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+11:22:05 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:22:20 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:22:23 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:23:29 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+11:23:29 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:23:32 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:25:32 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_interrupt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_interrupt.d" -MT"src/SI_interrupt.d" -o "src/SI_interrupt.o" "../src/SI_interrupt.c"
+../src/SI_interrupt.c: In function 'rc5_interrupt_handler':
+../src/SI_interrupt.c:64:13: warning: unknown escape sequence: '\I' [enabled by default]
+../src/SI_interrupt.c: In function 'init_interrupt_controller':
+../src/SI_interrupt.c:70:10: warning: unused variable 'StatusRC5' [-Wunused-variable]
+Finished building: ../src/SI_interrupt.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20922	   1368	   4886	  27176	   6a28	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+11:25:38 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:33:54 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+11:33:55 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:33:59 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf microblaze_0
+11:33:59 **** Clean-only build of configuration Debug for project Space_invaders ****
+make clean 
+rm -rf  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o  ./src/SI_draw.d ./src/SI_globals.d ./src/SI_interrupt.d ./src/SI_logic.d ./src/SI_main.d ./src/platform.d  Space_invaders.elf.size  Space_invaders.elf.elfcheck  Space_invaders.elf
+ 
+11:34:00 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../LPRS2_projekat-master_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../LPRS2_projekat-master_hw_platform/system.xml -pe
+microblaze_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+Compiling common
+Compiling standalone
+Compiling intc
+Compiling uartlite
+Compiling bram
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+11:34:06 **** Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_draw.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_draw.d" -MT"src/SI_draw.d" -o "src/SI_draw.o" "../src/SI_draw.c"
+Finished building: ../src/SI_draw.c
+ 
+Building file: ../src/SI_globals.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_globals.d" -MT"src/SI_globals.d" -o "src/SI_globals.o" "../src/SI_globals.c"
+Finished building: ../src/SI_globals.c
+ 
+Building file: ../src/SI_interrupt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_interrupt.d" -MT"src/SI_interrupt.d" -o "src/SI_interrupt.o" "../src/SI_interrupt.c"
+../src/SI_interrupt.c: In function 'rc5_interrupt_handler':
+../src/SI_interrupt.c:64:13: warning: unknown escape sequence: '\I' [enabled by default]
+../src/SI_interrupt.c: In function 'init_interrupt_controller':
+../src/SI_interrupt.c:70:10: warning: unused variable 'StatusRC5' [-Wunused-variable]
+Finished building: ../src/SI_interrupt.c
+ 
+Building file: ../src/SI_logic.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_logic.d" -MT"src/SI_logic.d" -o "src/SI_logic.o" "../src/SI_logic.c"
+Finished building: ../src/SI_logic.c
+ 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+11:34:13 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:35:11 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+11:35:11 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:35:14 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:37:14 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+11:37:14 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:38:22 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:39:18 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20858	   1360	   4886	  27104	   69e0	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+11:39:21 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:39:30 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:39:44 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:40:50 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+11:41:05 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+11:41:08 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:41:17 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:41:57 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+11:41:57 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:42:16 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+11:42:16 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:42:24 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:45:10 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:45:23 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:46:26 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+11:48:36 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+11:49:08 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+11:49:13 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:49:18 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:57:28 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:57:58 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+11:57:58 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+11:58:04 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:31:22 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_interrupt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_interrupt.d" -MT"src/SI_interrupt.d" -o "src/SI_interrupt.o" "../src/SI_interrupt.c"
+../src/SI_interrupt.c: In function 'rc5_interrupt_handler':
+../src/SI_interrupt.c:65:13: warning: unknown escape sequence: '\I' [enabled by default]
+../src/SI_interrupt.c: In function 'init_interrupt_controller':
+../src/SI_interrupt.c:71:10: warning: unused variable 'StatusRC5' [-Wunused-variable]
+Finished building: ../src/SI_interrupt.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+12:31:38 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:31:56 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+12:31:56 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:31:59 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:32:26 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:35:32 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:37:13 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_interrupt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_interrupt.d" -MT"src/SI_interrupt.d" -o "src/SI_interrupt.o" "../src/SI_interrupt.c"
+../src/SI_interrupt.c: In function 'rc5_interrupt_handler':
+../src/SI_interrupt.c:67:13: warning: unknown escape sequence: '\I' [enabled by default]
+../src/SI_interrupt.c: In function 'init_interrupt_controller':
+../src/SI_interrupt.c:73:10: warning: unused variable 'StatusRC5' [-Wunused-variable]
+Finished building: ../src/SI_interrupt.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+12:37:16 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:38:09 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:39:40 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+12:39:44 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:40:58 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+12:41:17 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+12:41:17 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:41:32 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:43:35 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+12:43:35 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:43:57 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:45:20 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+Finished building libraries
+12:45:20 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:45:28 **** Clean-only build of configuration Debug for project Space_invaders ****
+make clean 
+rm -rf  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o  ./src/SI_draw.d ./src/SI_globals.d ./src/SI_interrupt.d ./src/SI_logic.d ./src/SI_main.d ./src/platform.d  Space_invaders.elf.size  Space_invaders.elf.elfcheck  Space_invaders.elf
+ 
+12:45:28 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+rm -rf microblaze_0
+12:45:30 **** Build of project standalone_bsp_0 ****
+make -k all 
+libgen -hw ../LPRS2_projekat-master_hw_platform/system.xml\
+	       \
+	       -pe microblaze_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../LPRS2_projekat-master_hw_platform/system.xml -pe
+microblaze_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+
+Running libs - 'make -s libs "COMPILER=mb-gcc" "ARCHIVER=mb-ar"
+"COMPILER_FLAGS=-mlittle-endian -mno-xl-soft-mul -mxl-barrel-shift
+-mxl-pattern-compare -mcpu=v8.50.b  -O2 -c" "EXTRA_COMPILER_FLAGS=-g
+-ffunction-sections -fdata-sections"'.
+Compiling common
+Compiling standalone
+Compiling intc
+Compiling uartlite
+Compiling bram
+Compiling cpu
+Running execs_generate.
+Finished building libraries
+12:45:41 **** Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_draw.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_draw.d" -MT"src/SI_draw.d" -o "src/SI_draw.o" "../src/SI_draw.c"
+Finished building: ../src/SI_draw.c
+ 
+Building file: ../src/SI_globals.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_globals.d" -MT"src/SI_globals.d" -o "src/SI_globals.o" "../src/SI_globals.c"
+Finished building: ../src/SI_globals.c
+ 
+Building file: ../src/SI_interrupt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_interrupt.d" -MT"src/SI_interrupt.d" -o "src/SI_interrupt.o" "../src/SI_interrupt.c"
+../src/SI_interrupt.c: In function 'rc5_interrupt_handler':
+../src/SI_interrupt.c:67:13: warning: unknown escape sequence: '\I' [enabled by default]
+../src/SI_interrupt.c: In function 'init_interrupt_controller':
+../src/SI_interrupt.c:73:10: warning: unused variable 'StatusRC5' [-Wunused-variable]
+Finished building: ../src/SI_interrupt.c
+ 
+Building file: ../src/SI_logic.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_logic.d" -MT"src/SI_logic.d" -o "src/SI_logic.o" "../src/SI_logic.c"
+Finished building: ../src/SI_logic.c
+ 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building file: ../src/platform.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+12:45:46 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:46:42 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:49:36 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_interrupt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_interrupt.d" -MT"src/SI_interrupt.d" -o "src/SI_interrupt.o" "../src/SI_interrupt.c"
+../src/SI_interrupt.c: In function 'rc5toInput':
+../src/SI_interrupt.c:16:7: error: label at end of compound statement
+../src/SI_interrupt.c: In function 'rc5_interrupt_handler':
+../src/SI_interrupt.c:76:13: warning: unknown escape sequence: '\I' [enabled by default]
+../src/SI_interrupt.c: In function 'init_interrupt_controller':
+../src/SI_interrupt.c:82:10: warning: unused variable 'StatusRC5' [-Wunused-variable]
+../src/SI_interrupt.c: In function 'rc5toInput':
+../src/SI_interrupt.c:19:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/SI_interrupt.o] Greška 1
+12:49:42 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_interrupt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_interrupt.d" -MT"src/SI_interrupt.d" -o "src/SI_interrupt.o" "../src/SI_interrupt.c"
+../src/SI_interrupt.c: In function 'rc5_interrupt_handler':
+../src/SI_interrupt.c:76:13: warning: unknown escape sequence: '\I' [enabled by default]
+../src/SI_interrupt.c: In function 'init_interrupt_controller':
+../src/SI_interrupt.c:82:10: warning: unused variable 'StatusRC5' [-Wunused-variable]
+../src/SI_interrupt.c: In function 'rc5toInput':
+../src/SI_interrupt.c:19:1: warning: control reaches end of non-void function [-Wreturn-type]
+Finished building: ../src/SI_interrupt.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+12:49:58 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_interrupt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_interrupt.d" -MT"src/SI_interrupt.d" -o "src/SI_interrupt.o" "../src/SI_interrupt.c"
+../src/SI_interrupt.c: In function 'rc5_interrupt_handler':
+../src/SI_interrupt.c:78:13: warning: unknown escape sequence: '\I' [enabled by default]
+../src/SI_interrupt.c: In function 'init_interrupt_controller':
+../src/SI_interrupt.c:84:10: warning: unused variable 'StatusRC5' [-Wunused-variable]
+Finished building: ../src/SI_interrupt.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+12:50:28 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.
+12:53:48 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_interrupt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_interrupt.d" -MT"src/SI_interrupt.d" -o "src/SI_interrupt.o" "../src/SI_interrupt.c"
+../src/SI_interrupt.c: In function 'rc5_interrupt_handler':
+../src/SI_interrupt.c:84:13: warning: unknown escape sequence: '\I' [enabled by default]
+../src/SI_interrupt.c: In function 'init_interrupt_controller':
+../src/SI_interrupt.c:90:10: warning: unused variable 'StatusRC5' [-Wunused-variable]
+Finished building: ../src/SI_interrupt.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20870	   1360	   4880	  27110	   69e6	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+12:54:18 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_interrupt.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_interrupt.d" -MT"src/SI_interrupt.d" -o "src/SI_interrupt.o" "../src/SI_interrupt.c"
+../src/SI_interrupt.c: In function 'rc5_interrupt_handler':
+../src/SI_interrupt.c:85:13: warning: unknown escape sequence: '\I' [enabled by default]
+../src/SI_interrupt.c: In function 'init_interrupt_controller':
+../src/SI_interrupt.c:91:10: warning: unused variable 'StatusRC5' [-Wunused-variable]
+Finished building: ../src/SI_interrupt.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20943	   1360	   4880	  27183	   6a2f	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+12:54:56 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/SI_main.o: In function `rc5toInput':
+C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Workspace\Space_invaders\Debug/../src/SI_main.c:159: multiple definition of `rc5toInput'
+./src/SI_interrupt.o:C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Workspace\Space_invaders\Debug/../src/SI_interrupt.c:11: first defined here
+collect2: ld returned 1 exit status
+make: *** [Space_invaders.elf] Greška 1
+12:55:42 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/SI_main.o: In function `rc5toInput':
+C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Workspace\Space_invaders\Debug/../src/SI_main.c:159: multiple definition of `rc5toInput'
+./src/SI_interrupt.o:C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Workspace\Space_invaders\Debug/../src/SI_interrupt.c:11: first defined here
+collect2: ld returned 1 exit status
+make: *** [Space_invaders.elf] Greška 1
+12:56:13 **** Auto Build of configuration Debug for project Space_invaders ****
+make all 
+Building file: ../src/SI_main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -Os -g3 -c -fmessage-length=0 -I../../standalone_bsp_0/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/SI_main.d" -MT"src/SI_main.d" -o "src/SI_main.o" "../src/SI_main.c"
+Finished building: ../src/SI_main.c
+ 
+Building target: Space_invaders.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.50.b -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Space_invaders.elf"  ./src/SI_draw.o ./src/SI_globals.o ./src/SI_interrupt.o ./src/SI_logic.o ./src/SI_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: Space_invaders.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size Space_invaders.elf  |tee "Space_invaders.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20955	   1360	   4885	  27200	   6a40	Space_invaders.elf
+Finished building: Space_invaders.elf.size
+ 
+Invoking: Xilinx ELF Check
+elfcheck Space_invaders.elf -hw ../../LPRS2_projekat-master_hw_platform/system.xml -pe microblaze_0  |tee "Space_invaders.elf.elfcheck"
+elfcheck
+Xilinx EDK 14.6 Build EDK_P.68d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: elfcheck -hw ../../LPRS2_projekat-master_hw_platform/system.xml
+-pe microblaze_0 Space_invaders.elf 
+
+ELF file	: Space_invaders.elf
+elfcheck passed.
+Finished building: Space_invaders.elf.elfcheck
+ 
+12:56:18 **** Incremental Build of configuration Debug for project Space_invaders ****
+make all 
+make: Ništa za napraviti za `all'.

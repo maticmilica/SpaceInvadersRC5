@@ -1,0 +1,12 @@
+##############################################################################
+## Filename:          C:/materija/RA77-2013/LPRS2_projekat-master/LPRS2_projekat-master/pcores/rc5controller_v1_00_a/data/rc5controller_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Thu May 19 11:21:22 2016 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib rc5controller_v1_00_a user_logic vhdl
+lib rc5controller_v1_00_a rc5controller vhdl
+lib rc5controller_v1_00_a RC5Shifter vhdl
+lib rc5controller_v1_00_a reg vhdl

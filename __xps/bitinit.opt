@@ -1,0 +1,1 @@
+ -p xc6slx45fgg676-2 -pe microblaze_0 SDK/SDK_Workspace/Space_invaders/Debug/Space_invaders.elf

@@ -1,0 +1,119 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml rc5controller.twx rc5controller.ncd -o rc5controller.twr
+rc5controller.pcf
+
+Design file:              rc5controller.ncd
+Physical constraint file: rc5controller.pcf
+Device,package,speed:     xc6slx45,fgg676,C,-2 (PRODUCTION 1.23 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock S_AXI_ACLK
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+S_AXI_ARESETN|    1.870(R)|      SLOW  |   -0.225(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_ARVALID|    1.668(R)|      SLOW  |   -0.108(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_AWVALID|    1.245(R)|      SLOW  |    0.026(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_BREADY |    2.235(R)|      SLOW  |   -0.134(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RREADY |    2.249(R)|      SLOW  |   -0.255(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WVALID |    1.463(R)|      SLOW  |   -0.088(R)|      SLOW  |S_AXI_ACLK_BUFGP  |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock iCLK
+-------------+------------+------------+------------+------------+------------------------------------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                                                | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                               | Phase  |
+-------------+------------+------------+------------+------------+------------------------------------------------+--------+
+S_AXI_ARESETN|   -1.294(R)|      FAST  |    3.294(R)|      SLOW  |USER_LOGIC_I/rcshifter/iCLK_shift_active_AND_9_o|   0.000|
+             |    2.287(R)|      SLOW  |   -1.077(R)|      FAST  |iCLK_IBUF_BUFG                                  |   0.000|
+-------------+------------+------------+------------+------------+------------------------------------------------+--------+
+
+Setup/Hold to clock iIR
+-------------+------------+------------+------------+------------+------------------------------------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                                                | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)                               | Phase  |
+-------------+------------+------------+------------+------------+------------------------------------------------+--------+
+S_AXI_ARESETN|   -0.195(R)|      FAST  |    1.507(R)|      SLOW  |USER_LOGIC_I/rcshifter/iCLK_shift_active_AND_9_o|   0.000|
+-------------+------------+------------+------------+------------+------------------------------------------------+--------+
+
+Clock S_AXI_ACLK to Pad
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+              |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination   |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+S_AXI_ARREADY |        11.400(R)|      SLOW  |         4.441(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_AWREADY |        11.322(R)|      SLOW  |         4.430(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_BVALID  |        10.090(R)|      SLOW  |         4.346(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<0>|        10.518(R)|      SLOW  |         4.527(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<1>|        10.603(R)|      SLOW  |         4.571(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<2>|        11.291(R)|      SLOW  |         5.118(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RDATA<3>|        10.160(R)|      SLOW  |         4.332(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_RVALID  |        10.005(R)|      SLOW  |         4.292(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+S_AXI_WREADY  |        11.910(R)|      SLOW  |         4.834(R)|      FAST  |S_AXI_ACLK_BUFGP  |   0.000|
+--------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock S_AXI_ACLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    3.393|         |         |         |
+iCLK           |    2.313|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iCLK           |    9.200|         |         |         |
+iIR            |    9.200|    3.425|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock iIR
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+iCLK           |    4.037|         |         |         |
+iIR            |    4.037|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu May 19 12:25:07 2016 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 262 MB
+
+
+

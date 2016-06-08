@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\pcores\rc5controller_v1_00_a\devl\synthesis\rc5controller_xst.prj"
+-top rc5controller
+-p virtex6
+-ofn "C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\pcores\rc5controller_v1_00_a\devl\synthesis\rc5controller_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib rc5controller_v1_00_a

@@ -1,0 +1,10 @@
+-batch 
+-create rc5controller 
+-ver 1.00.a 
+-dir "C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master" 
+-lang vhdl 
+-bus axi4lite s 
+-reg 1 
+-xps 
+-ise 
+-driver 

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Workspace\LPRS2_projekat-master_hw_platform\system.bit" key="LPRS2_projekat-master_hw_platform-bitFile"/>
+	<item value="C:\materija\RA77-2013\LPRS2_projekat-master\LPRS2_projekat-master\LPRS2_projekat-master\SDK\SDK_Workspace\LPRS2_projekat-master_hw_platform\system_bd.bmm" key="LPRS2_projekat-master_hw_platform-bmmFile"/>
+	<item value="bootloop" key="LPRS2_projekat-master_hw_platform-microblaze_0-initElf"/>
+</section>
